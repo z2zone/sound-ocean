@@ -2,7 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+h3,h4 {
+    font-weight: 400;
+    color: rgb(99, 99, 99);
 }
 
 @import "./controller";
 @import "./song";
+@import "./library";
