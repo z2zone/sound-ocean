@@ -1,10 +1,16 @@
 import React from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMusic } from "@fortawesome/free-solid-svg-icons";
 
-const Nav = ({ isNavOpen, setIsNavOpen }) => {
+const Nav = ({ isLibOpen, setIsLibOpen }) => {
     return (
-        <div className="nav">
-            testing
-        </div>
+        <nav className="nav">
+            <h1>Sound Ocean</h1>
+            <button onClick={() => setIsLibOpen(!isLibOpen)}>
+                Library
+                <FontAwesomeIcon icon={faMusic} />
+            </button>
+        </nav>
     );   
 }
 

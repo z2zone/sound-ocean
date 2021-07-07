@@ -44,7 +44,7 @@ const Controller = ({ currentSong, isPlaying, setIsPlaying }) => {
         <div className="controller">
             <div className="time-controller">
                 <p>{formatTime(timeInfo.currentTime)}</p>
-                <input min={0} max={timeInfo.duration} value={timeInfo.currentTime} onChange={dragHandler} type="range" />
+                <input min={0} max={timeInfo.duration || 0} value={timeInfo.currentTime} onChange={dragHandler} type="range" />
                 <p>{formatTime(timeInfo.duration)}</p>
             </div>
             <div className="play-controller">

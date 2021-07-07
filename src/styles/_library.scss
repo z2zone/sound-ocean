@@ -6,6 +6,9 @@
     height: 100%;
     box-shadow: 2px 2px 50px rgb(184, 184, 184);
     overflow: scroll;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    opacity: 0;
     h1 {
         padding: 1rem;
     }
@@ -33,7 +36,10 @@
         font-size: 0.7rem;
     }
 }
-
+.active-library{
+    opacity: 1;
+    transform: translateX(0%);
+}
 * {
     scrollbar-width: thin;
     scrollbar-color: rgba(155,155,155,0.5) transparent;
